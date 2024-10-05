@@ -11,6 +11,10 @@ namespace CustomerFunctions
 {
 	void customer_panel() {
 		using namespace std;
+		if (items.size() == 0) {
+			cout << "No items available" << endl;
+			return;
+		}
 		cout << "Enter the number of the item you wish to purchase: " << endl;
 		int index;
 		cin >> index;
